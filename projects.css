@@ -193,3 +193,13 @@ body{
         padding-left: 4%;
     }
 }
+@media only screen and (max-width: 397px){
+    body{
+        padding-bottom: 130px;
+    }
+}
+@media only screen and (max-width: 238px){
+    body{
+        padding-bottom: 200px;
+    }
+}

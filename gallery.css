@@ -194,6 +194,12 @@ p{
         max-width: 50%;
     }
 }
+@media only screen and (max-width: 725px){
+    .foot-links{
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+}
 @media only screen and (max-width: 600px){
     .column{
         -ms-flex: 100%;
@@ -201,10 +207,13 @@ p{
         max-width: 100%;
     }
 }
-/* Mobiles */
-@media only screen and (max-width: 725px){
-    .foot-links{
-        padding-right: 4%;
-        padding-left: 4%;
+@media only screen and (max-width: 397px){
+    body{
+        padding-bottom: 130px;
+    }
+}
+@media only screen and (max-width: 238px){
+    body{
+        padding-bottom: 200px;
     }
 }
