@@ -2,6 +2,24 @@
     box-sizing: border-box;
     font-family: sans-serif
 }
+.quote{
+    margin-left: 2em;
+    font-weight: 600;
+    font-size: 30px;
+    font-family: Atrament;
+    margin-top: 3em;
+}
+.quote::after{
+    margin-bottom: 5em;
+}
+.space{
+    display: inline-block;
+    margin-left: 3em;
+    font-weight: 600;
+    font-size: 30px;
+    font-family: Atrament;
+    margin-bottom: 5em;
+}
 a{
     text-decoration: none;
 }
