@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+body{
+    margin: 0;
+    overflow: scroll;
+    padding-bottom: 100px;
+}
+p{
+    margin: 2em;
+    line-height: 26px;
+    font-size: large;
+}
+.head-title{
+    padding-top: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    height: 6em;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 2em;
+    font-weight: bolder;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 600% 100%;
+    animation: title-head 20s ease infinite;
+}
+@keyframes title-head {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.footer-box{
+    background: white;
+    position: fixed;
+    float: left;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    border-top: 0.3em solid purple;
+}
+.foot-links{
+    display: inline-block;
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: 600;
+    margin: 0.5em;
+    transition: 1s;
+}
+.github{
+    color: black;
+    text-decoration: none;
+}
+.git{
+    padding: 0;
+    margin-right: 0;
+    transition: 0.5s;
+    display: inline-block;
+    text-decoration: none;
+}
+.hub{
+    padding: 0;
+    margin-left: 0;
+    transition: 0.5s;
+    display: inline-block;
+    text-decoration: none;
+}
+.github:hover .git{
+    color: black;
+    background: white;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    transition: 0.5s;
+}
+.github:hover .hub{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px; 
+    color: white;
+    background: black;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    transition: 0.5s;
+}
+.opencode{
+    display:inline-block;
+    color: black;
+    text-decoration: none;
+}
+.opencode-c, .opencode-d, .opencode-e, .opencode-o{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    transition: 0.5s;
+    
+}
+.btn{
+    text-decoration: none;
+    padding: 1em;
+    margin: 1em;
+    font-weight: 600;
+    border: 0.1em solid #000000;
+    display: inline-block;
+    background: white;
+    color: Black;
+    text-align: center;
+    border-radius: 5%;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    transition: 1s;
+}
+.btn:hover{
+    border: 0.1em solid white;
+    background-size: 600% 100%;
+    background: linear-gradient(-75deg, rgb(253, 163, 122), rgb(185, 255, 21));
+    color: white;
+    transition: 1s;
+    border-radius: 25px;
+    padding-left: 1.1em;
+    padding-right:1.1em;
+}
+.opencode:hover{
+    transform: rotateX(360deg);
+}
+.opencode:hover .opencode-c{
+    color: purple;
+    transition: 0.5s;
+}
+.opencode:hover .opencode-o{
+    color: rgb(126, 35, 126);
+    transition: 0.5s;
+}
+.opencode:hover .opencode-d{
+    color: rgb(129, 52, 129);
+    transition: 0.5s;
+}
+.opencode:hover .opencode-e{
+    color: rgb(128, 92, 128);
+    transition: 0.5s;
+}
+.gmail{
+    text-decoration: none;
+    color: black;
+}
+.gmail:hover{
+    transition: 0.5s;
+    transform: rotateZ(360deg);
+}
+.gmail-a, .gmail-g, .gmail-m, .gmail-i, .gmail-l{
+    display: inline-block;
+}
+.gmail:hover .gmail-g{
+    color: blue;
+}
+.gmail:hover .gmail-m{
+    color: red;
+}
+.gmail:hover .gmail-a{
+    color: rgb(255, 187, 0);
+}
+.gmail:hover .gmail-i{
+    color: green;
+}
+.gmail:hover .gmail-l{
+    color: blue;
+}
+    /* Mobiles */
+@media only screen and (max-width: 725px){
+    .foot-links{
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+}
