@@ -61,7 +61,8 @@ body{
 .hello{
     font-weight: bold;
     font-family: sans-serif;
-    margin: 1em;
+    font-size: 360%;
+    padding: 20%;
     text-align: center;
 }
 .footer-box{
