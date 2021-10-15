@@ -13,13 +13,16 @@ body{
 .head-title{
     padding-top: 1em;
     padding-left: 0.5em;
+    float: left;
+    display: block;
     padding-right: 0.5em;
     height: 6em;
+    width:100%;
     text-align: center;
     color: white;
     font-family: sans-serif;
     font-size: 2em;
-    font-weight: bolder;
+    font-weight: bold;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 600% 100%;
     animation: title-head 20s ease infinite;
@@ -35,29 +38,31 @@ body{
         background-position: 0% 50%;
     }
 }
-.btn{
-    padding: 1em;
-    margin: 1em;
+.h-btn{
+    padding: 30px;
+    margin: 10px;
+    width: 20%;
     font-weight: 600;
-    border: 0.1em solid #000000;
     display: inline-block;
     background: white;
     color: Black;
     text-align: center;
     border-radius: 5%;
-    font-size: 1.2em;
+    font-size: 90%;
     text-transform: uppercase;
     transition: 1s;
 }
-.btn:hover{
-    border: 0.1em solid white;
-    background-size: 600% 100%;
+.h-btn:hover{
     background: linear-gradient(-75deg, rgb(253, 122, 242), rgb(228, 140, 255));
     color: white;
-    transition: 1s;
+    transition: 0.5s;
     border-radius: 25px;
-    padding-left: 1.1em;
-    padding-right:1.1em;
+}
+.hello{
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 1em;
+    text-align: center;
 }
 .footer-box{
     background: white;
@@ -165,26 +170,47 @@ body{
 .gmail:hover .gmail-l{
     color: blue;
 }
-    /* Mobiles */
-@media only screen and (max-width: 725px){
-    .btn{
-        width: 90%;
+
+@media only screen and (max-width: 1080px){
+    .h-btn{
+        font-size: 80%;
+    }
+}
+@media only screen and (max-width: 927px){
+    .h-btn{
+        font-size: 70%;
+    }
+}
+@media only screen and (max-width: 878px){
+    .h-btn{
+        font-size: 60%;
+    }
+}
+@media only screen and (max-width: 730px){
+    .head-title{
+        height: 8em;
+    }
+    .h-btn{
+        width: 40%;
+        font-size: 0.7em;
     }
     .foot-links{
         padding-right: 4%;
         padding-left: 4%;
     }
 }
-
-    /* Desktop */
-@media only screen and (min-width: 725px){
-    .btn{
-        width: 45%;
-    }
-}
-@media only screen and (max-width: 397px){
+@media only screen and (max-width: 456px){
     body{
         padding-bottom: 130px;
+    }
+    .h-btn{
+        font-size: 40%;
+    }
+}
+
+@media only screen and (max-width: 277px){
+    .h-btn{
+        width: 30%;
     }
 }
 @media only screen and (max-width: 238px){
