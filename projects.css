@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family: sans-serif
 }
+
 p{
     margin: 2em;
     line-height: 26px;
@@ -19,21 +20,26 @@ ul li:before {
 	position: absolute;
 	left: 0;
 }
+a{
+    text-decoration: none;
+}
 body{
     margin: 0;
-    overflow: scroll;
     padding-bottom: 100px;
 }
 .head-title{
     padding-top: 1em;
     padding-left: 0.5em;
+    float: left;
+    display: block;
     padding-right: 0.5em;
     height: 6em;
+    width:100%;
     text-align: center;
     color: white;
     font-family: sans-serif;
     font-size: 2em;
-    font-weight: bolder;
+    font-weight: bold;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 600% 100%;
     animation: title-head 20s ease infinite;
@@ -98,21 +104,18 @@ body{
 }
 .github{
     color: black;
-    text-decoration: none;
 }
 .git{
     padding: 0;
     margin-right: 0;
     transition: 0.5s;
     display: inline-block;
-    text-decoration: none;
 }
 .hub{
     padding: 0;
     margin-left: 0;
     transition: 0.5s;
     display: inline-block;
-    text-decoration: none;
 }
 .github:hover .git{
     color: black;
@@ -133,7 +136,6 @@ body{
 .opencode{
     display:inline-block;
     color: black;
-    text-decoration: none;
 }
 .opencode-c, .opencode-d, .opencode-e, .opencode-o{
     display: inline-block;
@@ -162,7 +164,6 @@ body{
     transition: 0.5s;
 }
 .gmail{
-    text-decoration: none;
     color: black;
 }
 .gmail:hover{

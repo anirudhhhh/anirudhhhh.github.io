@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    line-height: 2em;
     font-family: sans-serif
 }
 a{
@@ -64,6 +65,33 @@ body{
     font-size: 300%;
     padding: 20%;
     text-align: center;
+}
+
+.things{
+    font-weight: 520;
+    margin: 5%;
+    font-family: sans-serif;
+}
+.heading-sub{
+    font-weight: 600;
+    padding: 1em;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 20px;
+    border: 5px solid rgba(179, 0, 179, 0.692);
+}
+.row{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 2em;
+}
+.column{
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
 }
 .footer-box{
     background: white;
@@ -172,6 +200,7 @@ body{
     color: blue;
 }
 
+
 @media only screen and (max-width: 1080px){
     .h-btn{
         font-size: 80%;
@@ -187,9 +216,16 @@ body{
         font-size: 60%;
     }
 }
-@media only screen and (max-width: 730px){
+@media only screen and (max-width: 800px){
+    .column{
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media only screen and (max-width: 760px){
     .head-title{
-        height: 8em;
+        height: 9em;
     }
     .h-btn{
         width: 40%;
@@ -198,6 +234,13 @@ body{
     .foot-links{
         padding-right: 4%;
         padding-left: 4%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .column{
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
     }
 }
 @media only screen and (max-width: 456px){

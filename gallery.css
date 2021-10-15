@@ -15,13 +15,16 @@ p{
 .head-title{
     padding-top: 1em;
     padding-left: 0.5em;
+    float: left;
+    display: block;
     padding-right: 0.5em;
     height: 6em;
+    width:100%;
     text-align: center;
     color: white;
     font-family: sans-serif;
     font-size: 2em;
-    font-weight: bolder;
+    font-weight: bold;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 600% 100%;
     animation: title-head 20s ease infinite;
@@ -46,6 +49,7 @@ p{
     background: white;
     color: Black;
     text-align: center;
+    text-decoration:none;
     border-radius: 5%;
     font-size: 90%;
     text-transform: uppercase;
@@ -56,13 +60,6 @@ p{
     color: white;
     transition: 0.5s;
     border-radius: 25px;
-}
-.hello{
-    font-weight: bold;
-    font-family: sans-serif;
-    font-size: 300%;
-    padding: 20%;
-    text-align: center;
 }
 .footer-box{
     background: white;
